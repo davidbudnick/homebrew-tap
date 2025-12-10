@@ -5,21 +5,21 @@
 class RedisTui < Formula
   desc "A powerful TUI for managing Redis databases"
   homepage "https://github.com/davidbudnick/redis"
-  version "1.0.11"
+  version "1.0.12"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/davidbudnick/redis/releases/download/v1.0.11/redis-tui_1.0.11_Darwin_x86_64.tar.gz"
-      sha256 "d592deb6858a50bd5206ed8aa3e3683f1c7c36c57a30bad48ed1661e6a164ecd"
+      url "https://github.com/davidbudnick/redis/releases/download/v1.0.12/redis-tui_1.0.12_Darwin_x86_64.tar.gz"
+      sha256 "df8dda8e8dad890aadf9df385ab60039d791b9bfcad0d2a2cd892254c6a32343"
 
       def install
         bin.install "redis-tui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/davidbudnick/redis/releases/download/v1.0.11/redis-tui_1.0.11_Darwin_arm64.tar.gz"
-      sha256 "795223dcb289eeb435d3caf77197ff4a3f91ba658149237ea0de36ff755de84b"
+      url "https://github.com/davidbudnick/redis/releases/download/v1.0.12/redis-tui_1.0.12_Darwin_arm64.tar.gz"
+      sha256 "24e28620092cfd869e1791b31616bdf163c64d2909cd558a38d07b411c272888"
 
       def install
         bin.install "redis-tui"
@@ -29,15 +29,15 @@ class RedisTui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/davidbudnick/redis/releases/download/v1.0.11/redis-tui_1.0.11_Linux_x86_64.tar.gz"
-      sha256 "3b062f0493f0b127bf71be607305e46b84e2b9382d5cf80b1389845a988bac1f"
+      url "https://github.com/davidbudnick/redis/releases/download/v1.0.12/redis-tui_1.0.12_Linux_x86_64.tar.gz"
+      sha256 "d6765589b1fbd215b6243400b33b72d04a0c0e0b979c108853c37d1816ad2771"
       def install
         bin.install "redis-tui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/davidbudnick/redis/releases/download/v1.0.11/redis-tui_1.0.11_Linux_arm64.tar.gz"
-      sha256 "e3bccf6c5d0edda0553625e2e016137c8417cc0a3463c99eb70b0df33ef7d25e"
+      url "https://github.com/davidbudnick/redis/releases/download/v1.0.12/redis-tui_1.0.12_Linux_arm64.tar.gz"
+      sha256 "04c3cb3c7cb259c2452abd2fcf63ad7886da132d081dd1e3b8f3bccb3d3c3219"
       def install
         bin.install "redis-tui"
       end
