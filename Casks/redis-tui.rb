@@ -3,7 +3,7 @@ cask "redis-tui" do
   name "redis-tui"
   desc "A powerful TUI for managing Redis databases"
   homepage "https://github.com/davidbudnick/redis-tui"
-  version "1.0.32"
+  version "1.0.33"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "redis-tui" do
   on_macos do
     on_intel do
       url "https://github.com/davidbudnick/redis-tui/releases/download/v#{version}/redis-tui_#{version}_Darwin_x86_64.tar.gz"
-      sha256 "16288e4638138bb80dbdcaa60eb7709dd15503199f3814de60885fb3eb3533b7"
+      sha256 "a33621ae7d696581017e0ed715c0ffe2319d0f98e283d279419cc1d36cbbf9f6"
     end
     on_arm do
       url "https://github.com/davidbudnick/redis-tui/releases/download/v#{version}/redis-tui_#{version}_Darwin_arm64.tar.gz"
-      sha256 "87fa113f3f112f942d51ca38c579778d570f5354865ace53fae48dcd6c856b66"
+      sha256 "edc187ee90b470d20abf049b275400fb5d8ba7550f28429801424a83cadebb8c"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/davidbudnick/redis-tui/releases/download/v#{version}/redis-tui_#{version}_Linux_x86_64.tar.gz"
-      sha256 "13e9e9dd8d828ef94e7a543078049f0c73742124288881ec2e45dc9327aa9fb3"
+      sha256 "6887a543231c9d74ee8fc4713e656d0cf5e3b48ed604db78279e99548e07469d"
     end
     on_arm do
       url "https://github.com/davidbudnick/redis-tui/releases/download/v#{version}/redis-tui_#{version}_Linux_arm64.tar.gz"
-      sha256 "118344cba78da32600267531e54d306b19b49109137f9bda15dc27e6fa6e7395"
+      sha256 "a6f8cc4e8061efdace1455bac7aa7c11e4945bd5f887bea58a544bef133dfe99"
     end
   end
 
